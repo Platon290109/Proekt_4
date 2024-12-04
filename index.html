@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <title>Document</title>
-</head>
-<body>
-    
-    <script src="js.js"></script>
-</body>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h2>Камінь - ножиці - папір</h2>
+        <ul>
+          <li><button id="rock" data-rock="каміння">Каміння</button></li>
+          <li><button id="scissors" data-scissors="ножиці">Ножиці</button></li>
+          <li><button id="paper" data-paper="папір">Папір</button></li>
+        </ul>
+        <p>Ваш вибір: <span id="choise"></span></p>
+        <p>Вибір компʼютера: <span id="computerChoise"></span></p>
+      </div>
+
+      <div>
+        <p>Рахунок</p>
+        <p>Компʼютер - <span id="computerScore"></span></p>
+        <p>гравець - <span id="playerScore"></span></p>
+      </div>
+    </section>
+    <script src="js.js" type="module"></script>
+  </body>
 </html>
