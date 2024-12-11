@@ -62,8 +62,8 @@ function onClickpaper(eventObject) {
       computerScoreText.textContent = computerScore
       userScoreText.textContent = userScore
     }
-  }
-  function onClickscissors(eventObject) {
+}
+function onClickscissors(eventObject) {
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
   
     const userchois = scissors.dataset.scissors
@@ -86,4 +86,4 @@ function onClickpaper(eventObject) {
       computerScoreText.textContent = computerScore
       userScoreText.textContent = userScore
     }
-  }
+}
