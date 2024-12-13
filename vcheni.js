@@ -1,7 +1,7 @@
 const scientists = [ 
     { 
         name: "Albert", 
-        surname: "Einstein", 
+        surname: "Einshtein", 
         born: 1879, 
         dead: 1955, 
         id: 1 
@@ -87,9 +87,11 @@ const scientists = [
 const roki = document.getElementById("roki");
 const stariy = document.getElementById("stariy");
 const alfavit = document.getElementById("alfavit");
+const Albert = document.getElementById("Albert");
 roki.addEventListener("click", onClickRoki);
 stariy.addEventListener("click", onClickStariy);
 alfavit.addEventListener("click", onClickAlfavit);
+Albert.addEventListener("click", onClickAlbert)
 // Відсортувати вчених за кількістю прожитих років
 function onClickRoki () {
 const vidsort = scientists.sort((a, b)=>{return (b.dead-b.born)-(a.dead-a.born)})
@@ -105,4 +107,10 @@ console.log(samistari[0])
 function onClickAlfavit () {
 const abc = scientists.sort((a, b)=>a.surname.localeCompare(b.surname))
 console.log(abc)
+}
+// Знайти рік народження Albert Einshtein
+function onClickAlbert () {
+const Einshtein = scientists.filter((vcheniy)=>{return vcheniy.surname==="Einshtein"}).map((vcheniy)=>{return `${vcheniy.born}-${vcheniy.dead}`})
+Einshtein[0]
+console.log(Einshtein[0])
 }
